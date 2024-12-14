@@ -242,16 +242,28 @@ footer {
 .contact form button:hover {
     background-color: var(--hover1);
 }
+
+
+.nav-toggle {
+    display: none;
+}
+
+
+/* Responsive Design */
 /* mobile */
 @media (max-width: 600px) {
     .hamburger-menu {
         display: block;
     }
 
-    nav ul {
+    #nav-links {
         display: none;
         flex-direction: column;
         align-items: center;
+    }
+
+    .nav-toggle:checked ~ #nav-links {
+        display: flex;
     }
 
     nav ul li {
