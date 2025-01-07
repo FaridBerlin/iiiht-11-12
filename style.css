@@ -51,6 +51,7 @@ header {
     padding: 1rem 0;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
  .brand {
@@ -75,6 +76,7 @@ header {
     display: none;
     font-size: 2rem;
     cursor: pointer;
+
 }
 
 nav ul {
@@ -264,10 +266,47 @@ footer {
 
     .nav-toggle:checked ~ #nav-links {
         display: flex;
+        align-items: first baseline;
+        
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        margin: 1rem 0;
+    background-color: var(--color3);
+    width: 1px;
+    padding-left: 6px;
+    transition: all 1s ease;
+        
+    }
+
+    nav ul li a{
+        color: var(--color7);
+        text-shadow: #2D2A33;
+        display: block;
+        width: 100%;
+        transition: text-align 2s ease;
+        
+    }
+
+
+    nav ul li:hover {
+        background-color: var(--color3);
+        width: 95%;
+        
+        
+    }
+
+
+    nav ul li a:hover {
+        text-align: center;
+    
+    
+        
     }
 
     .product-grid {
