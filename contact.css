@@ -16,6 +16,16 @@ header {
     padding: 20px 0;
     text-align: center;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 3rem;
+}
+
+.contactheader{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-left: 3rem;
 }
 
 form {
