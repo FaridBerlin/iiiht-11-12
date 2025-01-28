@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Roboto/Roboto-Medium.ttf);
+}
+
+
+
+
+
+
+.socials-container{
+   display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.socials-container a{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    height: 66px;
+    position: relative;
+    width: 66px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px;
+    font-family: 'Roboto', sans-serif;
+
+
+    
+}
+
+
+.socials-container a svg{
+
+    height: 32px;
+}
+
+.socials-container a::before {
+    content:attr(data-social);
+    position: absolute;
+    background-color:var(--accent-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transform: translateY(-30px) rotate(25deg);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+}
+
+.socials-container a:hover{
+
+    background-color: var(--accent-color);
+    fill: white;
+}
+
+.socials-container a::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 62px;
+    left: 50%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--accent-color);
+    
+
+    transform: translateX(-50%) translateY(0) rotate(0);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.42,0,.44,1.68);
+
+
+    
+}
+
+.socials-container a:hover::before{
+    transform: translateY(-66px) rotate(0deg);
+    opacity: 1;
+}
+.socials-container a:hover::after{
+    transform:translateX(-50%) translateY(-10px) rotate(0deg);
+    opacity: 1;
+}
