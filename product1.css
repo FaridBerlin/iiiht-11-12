@@ -18,17 +18,17 @@
 
 
 .product-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
+display: flex;
+flex-direction: row;
 }
 
 .product-details2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    gap: 1rem;
+    padding-bottom: 2rem;
+
     list-style: none;
     
 }
@@ -123,4 +123,21 @@
     
 
 }
+
+/* Responsive Design */
+/* mobile */
+@media (max-width: 600px) {
+    .product-details {
+        flex-direction: column;
+    }
+
+    .product-images .main-image {
+        max-width: 100%;
+    }
+
+    .thumbnail-images {
+        justify-content: center;
+    }
+}
+
 
