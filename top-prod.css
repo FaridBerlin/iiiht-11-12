@@ -4,10 +4,9 @@
 
 .top-prod {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 3fr;
     margin-bottom: 3rem;
-    padding-left: 7rem;
-    padding-right: 1rem;
+    
 }
 
 .side-div {

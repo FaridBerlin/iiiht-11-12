@@ -611,7 +611,9 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
+ .top-btn{
+    padding: 1rem 3rem 1rem 3rem;
+ }
 }
 
 /* tablet */
@@ -628,6 +630,10 @@ footer {
         font-size: 1.5em;
         padding-bottom: 2em;
     }
+
+    .top-btn{
+        padding: 1rem 3rem 1rem 3rem;
+     }
 }
 
 /* desktop */
