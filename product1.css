@@ -43,11 +43,12 @@ flex-direction: row;
     width: 300px;
     height: auto;
     border-radius: 10px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 
 }
 
 .main-image:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: transform 0.5s;
 
 }
@@ -60,10 +61,11 @@ flex-direction: row;
 .thumbnail-images img {
     width: 60px;
     cursor: pointer;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .thumbnail:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: transform 0.5s;
 
 }

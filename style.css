@@ -62,7 +62,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding-bottom: 500px;
+
 }
 
 header {
@@ -84,7 +84,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 80px;
     height: auto;
     margin-right: 1rem;
 }
@@ -367,7 +367,6 @@ footer {
     color: var(--color1);
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
